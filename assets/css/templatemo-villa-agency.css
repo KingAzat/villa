@@ -316,10 +316,12 @@ Header Style
 --------------------------------------------- 
 */
 
+/* ===== HEADER PREMIUM AMÉLIORÉ ===== */
 .sub-header {
-  background-color: #fff;
-  padding: 10px 0px;
-  border-bottom: 1px solid #eee;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  padding: 12px 0px;
+  border-bottom: none;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .sub-header ul li {
@@ -336,27 +338,34 @@ Header Style
 
 .sub-header ul.social-links li a {
   display: inline-block;
-  width: 30px;
-  height: 30px;
-  background-color: #cdcdcd;
+  width: 34px;
+  height: 34px;
+  background: linear-gradient(135deg, #c9a227 0%, #e8c547 100%);
   border-radius: 50%;
   text-align: center;
-  line-height: 30px;
-  color: #fff;
-  font-size: 14px;
-  transition: all .3s;
+  line-height: 34px;
+  color: #1a1a2e;
+  font-size: 15px;
+  transition: all .4s ease;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(201, 162, 39, 0.3);
 }
 
 .sub-header ul.social-links li a:hover {
-  background-color: #f35525;
+  background: linear-gradient(135deg, #e8c547 0%, #c9a227 100%);
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 0 6px 15px rgba(201, 162, 39, 0.5);
+  color: #fff;
 }
 
 .sub-header ul.info li {
   font-size: 14px;
-  color: #7a7a7a;
-  border-right: 1px solid #eee;
+  color: #e0e0e0;
+  border-right: 1px solid rgba(255,255,255,0.15);
   margin-right: 25px;
   padding-right: 25px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
 }
 
 .sub-header ul.info li:last-child {
@@ -366,19 +375,25 @@ Header Style
 }
 
 .sub-header ul.info li i {
-  font-size: 20px;
-  color: #f35525;
-  margin-right: 8px;
+  font-size: 18px;
+  color: #c9a227;
+  margin-right: 10px;
+  transition: all .3s ease;
+}
+
+.sub-header ul.info li:hover i {
+  transform: scale(1.2);
+  color: #e8c547;
 }
 
 .background-header {
-  background-color: #fff;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)!important;
   height: 80px!important;
   position: fixed!important;
   top: 0!important;
   left: 0;
   right: 0;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12)!important;
   -webkit-transition: all .5s ease 0s;
   -moz-transition: all .5s ease 0s;
   -o-transition: all .5s ease 0s;
@@ -387,13 +402,14 @@ Header Style
 
 .header-area {
   position: relative;
-  background-color: #fff;
+  background: linear-gradient(135deg, #ffffff 0%, #fafbfc 100%);
   height: 100px;
   z-index: 100;
   -webkit-transition: all .5s ease 0s;
   -moz-transition: all .5s ease 0s;
   -o-transition: all .5s ease 0s;
   transition: all .5s ease 0s;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.08);
 }
 
 .header-area .main-nav {
@@ -407,15 +423,43 @@ Header Style
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.header-area .main-nav .logo:hover {
+  background: rgba(201, 162, 39, 0.08);
 }
 
 .header-area .main-nav .logo h1 {
   line-height: 100px;
-  font-size: 28px;
+  font-size: 26px;
   text-transform: uppercase;
-  color: #1e1e1e;
-  font-weight: 700;
-  letter-spacing: 2px;
+  background: linear-gradient(135deg, #c9a227 0%, #e8c547 50%, #c9a227 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-shadow: 2px 2px 4px rgba(201, 162, 39, 0.2);
+  position: relative;
+}
+
+.header-area .main-nav .logo h1::after {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #c9a227, #e8c547, #c9a227);
+  border-radius: 2px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.header-area .main-nav .logo:hover h1::after {
+  transform: scaleX(1);
 }
 
 .background-header .main-nav .logo h1 {
@@ -439,17 +483,35 @@ Header Style
 }
 
 .header-area .main-nav .nav li {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   height: 100px;
   line-height: 100px;
+  position: relative;
+}
+
+.header-area .main-nav .nav li::before {
+  content: '';
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 60%;
+  height: 3px;
+  background: linear-gradient(90deg, #c9a227, #e8c547);
+  border-radius: 2px;
+  transition: transform 0.3s ease;
+}
+
+.header-area .main-nav .nav li:hover::before {
+  transform: translateX(-50%) scaleX(1);
 }
 
 .header-area .main-nav .nav li a {
   display: block;
   padding-left: 20px;
   padding-right: 20px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 15px;
   height: 40px;
   line-height: 40px;
@@ -460,21 +522,32 @@ Header Style
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
   border: transparent;
-  letter-spacing: .25px;
+  letter-spacing: 0.5px;
+  position: relative;
 }
 
+/* Bouton CTA Premium */
 .header-area .main-nav .nav li:last-child a {
-  background-color: #1e1e1e;
+  background: linear-gradient(135deg, #c9a227 0%, #e8c547 100%);
   color: #fff;
   font-size: 14px;
-  font-weight: 400;
-  text-transform: none;
-  border-radius: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 25px;
   padding-left: 0px;
+  padding-right: 25px;
+  box-shadow: 0 4px 15px rgba(201, 162, 39, 0.4);
+  transition: all 0.4s ease;
+}
+
+.header-area .main-nav .nav li:last-child a:hover {
+  background: linear-gradient(135deg, #e8c547 0%, #c9a227 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(201, 162, 39, 0.6);
 }
 
 .header-area .main-nav .nav li:last-child a i {
-  background-color: #f35525;
+  background: rgba(255,255,255,0.2);
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -483,27 +556,27 @@ Header Style
   margin-right: 10px;
   border-radius: 50%;
   margin-left: -1px;
-}
-
-.header-area .main-nav .nav li:last-child:hover a {
-  background-color: #1e1e1e;
+  transition: all 0.3s ease;
 }
 
 .header-area .main-nav .nav li:last-child:hover a i {
-  color: #fff;
+  background: rgba(255,255,255,0.3);
+  transform: rotate(15deg);
 }
 
 .header-area .main-nav .nav li:hover a {
-  color: #f35525;
+  color: #c9a227;
+  transform: translateY(-2px);
 }
 
 .header-area .main-nav .nav li a.active {
-  color: #f35525;
+  color: #c9a227;
+  font-weight: 700;
 }
 
-
 .background-header .main-nav .nav li a.active {
-  color: #f35525;
+  color: #c9a227;
+  font-weight: 700;
 }
 
 .header-area .main-nav .menu-trigger {
