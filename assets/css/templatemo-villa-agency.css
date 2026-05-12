@@ -1826,3 +1826,255 @@ body {
     margin-right: 100px;
   }
 }
+/* ---------------------------------------------
+Africa Premium Properties - Professional Design Updates
+--------------------------------------------- */
+
+/* Enhanced color scheme for African luxury real estate */
+:root {
+  --primary-color: #c9a227; /* Gold - representing African wealth */
+  --secondary-color: #1a1a2e; /* Deep navy - professional elegance */
+  --accent-color: #d4af37; /* Metallic gold */
+  --text-dark: #2c2c2c;
+  --text-light: #f5f5f5;
+}
+
+/* Improved header styling */
+.header-area {
+  background: linear-gradient(135deg, var(--secondary-color) 0%, #16213e 100%);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+}
+
+.logo h1 {
+  color: var(--primary-color) !important;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* Enhanced navigation */
+.main-nav .nav li a {
+  color: var(--text-light);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.main-nav .nav li a:hover,
+.main-nav .nav li a.active {
+  color: var(--primary-color);
+}
+
+/* Professional banner overlay */
+.main-banner .item {
+  position: relative;
+}
+
+.main-banner .item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(26,26,46,0.7) 0%, rgba(201,162,39,0.3) 100%);
+  z-index: 1;
+}
+
+.main-banner .header-text {
+  position: relative;
+  z-index: 2;
+}
+
+.main-banner .header-text h2 {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.main-banner .category {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+/* Enhanced property cards */
+.properties .item {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.properties .item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.properties .item span.category {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.properties .item h6 {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.properties .item h4 a {
+  color: var(--text-dark);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.properties .item h4 a:hover {
+  color: var(--primary-color);
+}
+
+/* Professional buttons */
+.main-button a,
+.icon-button a {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  border: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.main-button a:hover,
+.icon-button a:hover {
+  background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+  transform: scale(1.05);
+}
+
+/* Enhanced section headings */
+.section-heading h6 {
+  color: var(--primary-color);
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.section-heading h2 {
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+.section-heading h2 em {
+  color: var(--primary-color);
+  font-style: normal;
+}
+
+/* Improved info tables */
+.info-table ul li {
+  border-bottom: 1px solid rgba(201,162,39,0.2);
+  padding: 15px 0;
+}
+
+.info-table ul li:last-child {
+  border-bottom: none;
+}
+
+.info-table h4 {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.info-table h4 span {
+  color: #666;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* Footer enhancement */
+footer {
+  background: linear-gradient(135deg, var(--secondary-color) 0%, #0f0f1a 100%);
+  color: var(--text-light);
+  padding: 40px 0;
+}
+
+footer p {
+  color: rgba(255,255,255,0.8);
+}
+
+footer a {
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--accent-color);
+}
+
+/* Pagination improvement */
+.pagination li a {
+  color: var(--secondary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 36px;
+  margin: 0 5px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.pagination li a.is_active,
+.pagination li a:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+/* Contact form enhancement */
+#contact-form input,
+#contact-form textarea {
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 15px;
+  transition: border-color 0.3s ease;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.orange-button {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color)) !important;
+  color: #fff !important;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.orange-button:hover {
+  background: linear-gradient(135deg, var(--accent-color), var(--primary-color)) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(201,162,39,0.4);
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .section-heading h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  
+  .properties .item h6 {
+    font-size: 18px;
+  }
+  
+  .main-banner .header-text h2 {
+    font-size: 24px;
+  }
+}
